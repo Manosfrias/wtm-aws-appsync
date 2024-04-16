@@ -4,7 +4,7 @@ import ReactModal from "react-modal";
 import close from "./close.png";
 import "./_versionModal.css";
 import { API_CONNECTION } from "../../config/apiConnection";
-import { cookieService } from "../../utils/cookie";
+import { cookieService } from "../../utils/beers";
 
 export function VersionModal({ cookieData, markdown }) {
   const manageCookies = cookieService(API_CONNECTION);
