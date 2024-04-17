@@ -1,6 +1,6 @@
-export const listBeersQuery = `
-    query listBeers {
-        listBeers {
+export const listSpeakersQuery = `
+    query listSpeakers {
+        listSpeakers {
             items {
                 img
                 name

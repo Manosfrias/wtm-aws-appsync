@@ -1,10 +1,10 @@
-export function Card({ beer }) {
+import "./card.css";
+
+export function Card({ speaker }) {
   return (
-    beer && (
-      <article>
-        <p>{beer?.name}</p>
-        <image src={beer?.img} />
-      </article>
-    )
+    <article className="speakers__card">
+      <img src={speaker?.img} />
+      <p className="speakers__card_name">{speaker?.name}</p>
+    </article>
   );
 }

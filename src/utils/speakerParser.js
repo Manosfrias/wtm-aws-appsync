@@ -1,6 +1,6 @@
-export function beerParser(action){
-    return (fetchedCookie) => {
-        const data = fetchedCookie?.data?.[action]
+export function speakerParser(action){
+    return (fetchedSpeaker) => {
+        const data = fetchedSpeaker?.data?.[action]
 
         if(!data) {
             return null;

@@ -1,19 +1,18 @@
 import { useRef } from "react";
-import { API_CONNECTION } from "../../config/apiConnection";
-import { beerService } from "../../utils/beers";
+import { useSpeakers } from "../../contexts/speakersContext";
+import "./form.css";
 
 export function Form() {
-  const { createBeer } = beerService(API_CONNECTION);
+  const { addSpeaker } = useSpeakers();
   const name = useRef();
   const img = useRef();
 
-  const handleSubmit = async () => {
-    const beer = {
+  const handleSubmit = () => {
+    const speaker = {
       name: name?.current?.value,
       img: img?.current?.value,
     };
-
-    const data = await createBeer(beer);
+    addSpeaker(speaker);
   };
 
   return (
