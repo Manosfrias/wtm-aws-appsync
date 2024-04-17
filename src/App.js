@@ -8,11 +8,12 @@ function App() {
 
   return (
     <main className="speakers">
-      <Form />
+     
       <h1 className="speakers-title">Ponentes</h1>
       <section className='speakers__wrapper'>
         {speakers?.map(speaker => <Card key={speaker.name} speaker={speaker} />)}
       </section>
+      <Form />
     </main>
   );
 }

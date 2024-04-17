@@ -2,10 +2,6 @@ body {
   background-color: rgba(223, 248, 246, 0.854902);
 }
 
-.speakers {
-  padding-block: 8rem 5rem;
-}
-
 .speakers-title {
   background-color: rgba(223, 248, 246, 0.854902);
   text-align: center;

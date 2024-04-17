@@ -16,10 +16,11 @@ export function Form() {
   };
 
   return (
-    <>
+    <section className="form">
+      <h2>Añade una ponente</h2>
       <input type="text" id="name" ref={name} />
       <input type="text" id="img" ref={img} />
       <button onClick={() => handleSubmit()}>Enviar</button>
-    </>
+    </section>
   );
 }
